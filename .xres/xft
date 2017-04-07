@@ -1,0 +1,11 @@
+! vi:syntax=xdefaults
+
+Xft.antialias:			true
+Xft.autohint:			false
+Xft.dpi:		        118
+Xft.lcdfilter:                  lcddefault
+Xft.hinting:			true
+Xft.hintstyle:			hintfull
+Xft.rgba:	    		rgb
+
+

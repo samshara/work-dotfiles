@@ -1,0 +1,93 @@
+
+! Compile xft: Attempt to find a visual with the given bit depth;
+URxvt*depth: 32
+
+! Compile xft: Turn on/off double-buffering for xft (default enabled).
+URxvt*buffered: true
+
+! Scrollbar
+URxvt.scrollBar: false
+
+! Clickable links
+URxvt.perl-ext-common: default,keyboard-select,clipboard,url-select
+
+
+! Select the fonts to be used. This is a comma separated list of font
+URxvt*font: xft:rai_font:medium:size=rai_fontsize
+URxvt*boldFont: xft:rai_font:bold:size=rai_fontsize
+URxvt*italicFont: xft:rai_font:italic:size=rai_fontsize
+URxvt*boldItalicFont: xft:rai_font:bold:italic:size=rai_fontsize
+
+! Use the specified colour for bold characters when the text is the default foreground colour
+!URxvt*colorBD:#01a252
+
+! Use the specified colour for italic characters when the text is the default foreground colour
+!URxvt*colorIT: #01a252
+
+! Use the specified colour for underlined characters when the
+URxvt*colorUL: #01a252
+
+! If set, use the specified colour as the background for highlighted
+URxvt*highlightColor: #ebdbb2
+
+! If set and highlightColor is set, use the specified colour as the
+URxvt*highlightTextColor: #282828
+
+! Use the specified colour for the cursor. The default is to use the
+URxvt*cursorColor: #c5c8c6
+
+
+! Use the specified colour for the colour of the cursor text. For this
+URxvt*cursorColor2: #282828
+
+! True: enable the scrollbar [default]; option -sb. False: disable the
+URxvt*scrollBar: false
+
+! True: place the scrollbar on the right of the window; option -sr.
+URxvt*scrollBar_right: true
+
+! True: show an rxvt scrollbar without a trough; option -st.
+URxvt*scrollBar_floating: true
+
+! Save number lines in the scrollback buffer [default 64]
+URxvt*saveLines: 65535
+
+! Internal border of number pixels. This resource is limited to 100;
+URxvt*internalBorder: 2
+
+! External border of number pixels. This resource is limited to 100;
+URxvt*externalBorder: 4
+
+
+! Specifies the terminal type name to be set in the TERM environment
+URxvt*termName: rxvt
+
+! True: blink the cursor. False: do not blink the cursor [default];
+URxvt*cursorBlink: false
+
+! True: Make the cursor underlined. False: Make the cursor a box
+URxvt*cursorUnderline: false
+
+! Sets the spacing between letters
+URxvt*letterSpace: -1
+
+! Specifies whether to use native transparency
+URxvt*transparent: false
+
+URxvt.iso14755: false
+
+! Keyboard select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! Clipboard functionality
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
+
+! Url-select functionality
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.button: 2 
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true
